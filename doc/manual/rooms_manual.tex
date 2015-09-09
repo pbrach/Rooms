@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Rooms Manual - for the HCI Course Project
+%
+% (Rooms by zeBra & kanGuru)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+\usepackage{times}
+
+\usepackage[margin=2.0cm]{geometry}
+
+\usepackage{fancyhdr}
+	\pagestyle{fancy}
+	\lhead{HCI Course Project}
+	\chead{\textbf{\LARGE{\textit{Rooms} Manual}} }
+	\rhead{by zeBra \& kanGuru}
+	\cfoot{\ }
+
+\setlength{\parindent}{0em} 
+
+%			B E G I N
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\section{About \textit{Rooms} }
+	The text adventure \textit{Rooms} throws a nameless hero who has an ordinary live,
+	into a wicked house that forces him to solve puzzles
+	that transcend all reason. Will he be able to escape alive?
+	
+	In the beginning the hero wakes up in the entrance hall of an old
+	dusty shack with nothing but his old pants on and the memories of the latest events lost... \\
+	
+	To finish the game the user has to solve some major puzzles by commanding the nameless 
+	hero through the game by using simple english sentences. Besides following the the main
+	target to escape from the house and make it to the \textit{'outside'}, the user may also try a lot of 
+	not game solving interactions.
+	
+	
+	
+\section{How To Start \textit{Rooms} }
+	The game consists of 11 prolog files zipped together in \textit{rooms.zip}. Unzip those into any folder.
+	From there call the game directly from the console of your choice with: \\ \\
+	 \textbf{\textit{\$ swipl -s rooms.pl -g "start."}  } \\ \\
+ 	Alternatively start \textbf{ \textit{swipl} } and consult the file \textbf{ \textit{rooms.pl}}. Type: \\ \\
+	\textbf{\textit{-? start.}  }
+  
+
+
+\section{Controls}
+	After starting the game the first thing the user will see is a short help text that explains how to
+	control the game. Generally it is possible to type normal english sentences (use of upper and lower case, or
+	sentence signs are free to use but not mandatory). \\
+	
+	The major condition for the user input is that the instructions always have to start with a verb. Imperatives 
+	have to be used like: \\
+	
+	\begin{tabular}{ l l }
+	   \textbf{ \textit{ \textgreater \ go to}} room name & (ex. go to the kitchen) \\
+	   \textbf{ \textit{ \textgreater \ look around          }}         &    gives a description of the surroundings             \\
+ 	   \textbf{ \textit{ \textgreater \ look in }}something &  (ex. look in the desk) \\
+  	   \textbf{ \textit{ \textgreater \ look at}} something & (ex. look at the door) \\
+ 	   \textbf{ \textit{ \textgreater \ take }} something      & (ex. take the apple) \\
+ 	   \textbf{ \textit{ \textgreater \ show inventory }}            &                  \\
+ 	   \textbf{ \textit{ \textgreater \ use }}something       &               \\
+ 	   \textbf{ \textit{ \textgreater \ use }}something  \textbf{ \textit{with}} another thing &    \\
+ 	   \textbf{ \textit{ \textgreater \ combine }} something \textbf{ \textit{ with}} another thing &  \\
+	\end{tabular}\\
+	
+	Other verbs are also understood: \textbf{ \textit{open, hit, kick, burn, eat, fart, talk, pull, unfold, give, put, jump}} \\ \\
+	\textbf{ \textit{'Things'}} are the objects (rooms, items, furniture, etc...) that are described in the game. The whole 
+	name of these objects is required. Short cuts like \textit{key} for \textit{rusty key} won't work.
+	To exit the game type: \textbf{ \textit{quit, exit, bye}} or \textbf{ \textit{good bye}}.
+	
+         
+
+\section{In Game Example}
+	Here a \textit{standard} game dialogue: \\
+	
+	\textbf{ \textit{ \textgreater \ Take the shoe!} } \\
+	  \hspace*{15 pt}{You have the shoe.} \\
+	\hspace*{0 pt}\textbf{ \textit{ \textgreater \ Eat the shoe!} } \\
+	{  \hspace*{12 pt}   You're getting hungy and in the shoe you can see the cow that was} \\
+ 	{  \hspace*{12 pt}   skinned for the leather. You try to eat the shoe, and almost choked} \\
+ 	{  \hspace*{12 pt}   to death.}  \\
+
+
+\end{document} 
+
+%			E N D
+%%%%%%%%%%%%%%%%%%%%%%%%%%

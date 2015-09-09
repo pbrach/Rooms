@@ -1,0 +1,46 @@
+Here are the most important things you need to do to play the game to the end.
+You don't need to do all, since you're able to achieve most goals without
+the previous steps (e.g. You don't need to go to the cellar to jump into the bucket).
+
+kitchen
+take purring cat
+take sword
+take rusty key
+
+hall
+open living room door with rusty key
+living room
+take letter
+open letter
+take key
+
+hall
+use number pad
+8191
+pull cellar door
+cellar
+
+use key on locker
+take folded piece of paper
+unfold piece of paper
+
+hall
+dining room
+take table leg
+combine open letter with table leg
+hall
+kitchen
+
+use torch with stove
+burn unfolded piece of paper
+
+hall
+kick closet door
+closet
+take bucket
+jump into bucket
+combine sword with purring cat
+show lady cat-sword
+
+fart at entrance door
+go outside

@@ -1,0 +1,108 @@
+CODING:
+-------
+Nani-Search provides already some basic program code for a nice 
+text-adventure, but on the other hand several fundamentals need 
+to be added. Those might pose quite a challenge to implement, 
+but most of them seem to be reachable within the given amount of
+time.
+
+
+We want the user to be able to use commands like:
+(1)
+> open box
+after that items of that box will become visible and can be taken
+
+from that we probably want to build something similar like:
+> sweep dirt away
+> push bushes away
+> dig at mark 
+> steal from <person_name>
+(and so on), which do practically the same as 'open box'.
+i think that might be an important concept. Perhaps it
+can be realized by fitting the grammar, to an object that
+has 'box-features'? (after reading a bit: yes that shoud work!)
+
+
+
+(2)
+Events and Puzzles: we want to describe change in the 
+environment if the user does something (digging, sweeping, 
+stealing...).
+Looking at Nani-Search it seems to be a good idea to
+implement a predicate like 'event' or 'puzzle' to all
+actions.
+Then while performing any action on 
+a) rooms (go to, open, close, unlock), 
+b) items(take, put in X, combine, eat), 
+c) immobile objects( open, close, break, X put on), 
+we have to check for a puzzle. 
+That means:
+- may the action be performed? (conditions, e.g.: open a closed
+                    door only if you got the corresponding key)
+- is there some output we want to generate?
+- are there other that shall be changed by that action
+  (like: "You took the ring from the socket, but then the room
+   collapsed. Luckily you managed to escape to room XXX", your
+   location changes to room XXX and the room from befor will
+   be permanently inaccessible).
+   
+   
+   
+(3)
+If we are really lucky with time etc.:
+Interaction with people/animals/robots/creatures.
+Speaking with them, and solving some puzzle by communication.
+(do communication  by parsing input? or by selecting a given
+sentence? probably the last)
+
+Although this might not be reachable, I think it should be
+possible to have some 'box-like' person-simulations within
+the game. Which might add a lot feel to the game.
+
+
+(4)
+Method to save the progress, if the game is 'long'. Solving the
+problem by asking in the beginning: "From which chapter do you
+want to start?". This won't depend on any save file or other saved
+previous progress, but the user won't be too frustrated (important!).
+
+Alternative: make a really small game, but implement awesome features.
+Good alternative, if we lack the ability of good game design.
+
+
+GAME DESIGN:
+------------
+The points above concern the coding part of the project.
+Another equally important part is the game design.
+
+(1) 
+Story telling: the user needs something interesting,
+the story needs to motivate him (fun, thrill, fantasy...).
+There need to be several simple aims to keep the motivation
+alive, and a big final aim. OR: skip the story almost
+complete and make it a puzzle game only, but with cool
+puzzles?
+
+(2)
+What is more fun: a lot of items directly visible, not all
+have a meaning OR: only meaningful items, but those are really
+scarce/hard to find OR: something in between?
+What kinds of puzzles are implementable, solvable and challenging
+in the right way? (user testing? might be a good ideal to let 
+someone else play the game before, to find bugs or identify 
+unsolvable quests)
+
+(3)
+Alternate solving routes? (sounds boring to me!)
+
+(4)
+Useless fun quests, easter eggs, useless features, being able
+to do strange stuff in the game world just for the fun of it.
+
+
+
+GAME PLAY:
+------------
+It is annoying to always explicitly open doors... 
+So from now on the open statement will be used for boxes,
+but doors are either always open or locked!
