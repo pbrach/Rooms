@@ -17,6 +17,7 @@ The game consists of 11 prolog files in a single directory. From that working di
 `$ swipl -s rooms.pl -g "start."`
 
 Alternatively start swipl and consult the file rooms.pl. Type:
+
 `-? start.`
 
 You should be able to kill the game any time by typing
@@ -51,12 +52,11 @@ Instruction: | Explanation:
 \> show inventory     |   Lists items you have with you
 *(the '>' represents the input promt)*
 
-Other verbs are also understood, like: 
-open, hit, kick, burn, eat, fart, talk, pull, unfold, give, put, jump
+Other verbs are also understood, like: `open, hit, kick, burn, eat, fart, talk, pull, unfold, give, put, jump`
 
 "Things" are the objects (rooms, items, furniture, etc...) that are described in the game. The whole name of these objects is required. Short cuts like 'key' for 'rusty key' will not work. 
 
-To exit the game type: quit, exit, bye or good bye.
+To exit the game type: `quit, exit, bye or good bye`
 
 
 
