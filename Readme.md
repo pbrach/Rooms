@@ -33,19 +33,22 @@ After starting the game the first thing the user will see is a short help text t
 
 The major requirement for the user input is that the instructions always have to start with a verb. Imperatives have to be used like:
 
-Instruction:                                Example:
-> go to [room-name]                         "go to the kitchen""
-> look in [something]                       "look in the desk"
-> look at [something]                       "look at the door"
-> take [something]                          "take the apple"
-> use [something]                           "use number pad"
-> use [something] with/on [another thing]   "use key on locker"
-> combine [something] with [another thing]  "combine open letter with table leg"
+Instruction: | Example:
+-------------|---------
+\> go to [room-name]        |                 "go to the kitchen""
+\> look in [something]      |                 "look in the desk"
+\> look at [something]       |                "look at the door"
+\> take [something]          |                "take the apple"
+\> use [something]           |                "use number pad"
+\> use [something] with/on [another thing] |  "use key on locker"
+\> combine [something] with [another thing] | "combine open letter with table leg"
 
-Instruction 
-(without a subject):    Explanation:
-> look around           Gives a description of the surroundings
-> show inventory        Lists items you have with you
+*Instructions that take no subject*
+
+Instruction: | Explanation:
+---------------------|-------------
+\> look around        |   Gives a description of the surroundings
+\> show inventory     |   Lists items you have with you
 
 Other verbs are also understood, like: 
 open, hit, kick, burn, eat, fart, talk, pull, unfold, give, put, jump
@@ -59,7 +62,7 @@ To exit the game type: quit, exit, bye or good bye.
 In Game Example
 ===============
 Here is a standard game dialogue:
-
+```
 > Take the shoe!
 
   You have the shoe.
@@ -68,6 +71,6 @@ Here is a standard game dialogue:
 
   You’re getting hungy and in the shoe you can see the cow that was
   skinned for the leather. You try to eat the shoe, and almost choked
-  to death.
+  to death.```
 
 
