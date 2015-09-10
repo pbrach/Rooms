@@ -14,14 +14,14 @@ This game is Prolog based, thus you need to install a Prolog interpreter. We rec
 
 The game consists of 11 prolog files in a single directory. From that working directory call the game directly from the console of your choice with:
 
-$ swipl -s rooms.pl -g "start."
+`$ swipl -s rooms.pl -g "start."`
 
 Alternatively start swipl and consult the file rooms.pl. Type:
--? start.
+`-? start.`
 
 You should be able to kill the game any time by typing
 
-quit
+`> quit`
 
 Or simply push: ctrl + d
 
@@ -35,7 +35,7 @@ The major requirement for the user input is that the instructions always have to
 
 Instruction: | Example:
 -------------|---------
-\> go to [room-name]        |                 "go to the kitchen""
+\> go to [room-name]        |                 "go to the kitchen"
 \> look in [something]      |                 "look in the desk"
 \> look at [something]       |                "look at the door"
 \> take [something]          |                "take the apple"
@@ -49,6 +49,7 @@ Instruction: | Explanation:
 ---------------------|-------------
 \> look around        |   Gives a description of the surroundings
 \> show inventory     |   Lists items you have with you
+*(the '>' represents the input promt)*
 
 Other verbs are also understood, like: 
 open, hit, kick, burn, eat, fart, talk, pull, unfold, give, put, jump
